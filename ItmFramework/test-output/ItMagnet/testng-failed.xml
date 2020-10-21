@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ItMagnet]">
+  <listeners>
+    <listener class-name="com.itm.Utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="ItMagnet(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.itm.TestCases.TC_LoginTest_001">
+        <methods>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.itm.TestCases.TC_LoginTest_001 -->
+    </classes>
+  </test> <!-- ItMagnet(failed) -->
+</suite> <!-- Failed suite [ItMagnet] -->
